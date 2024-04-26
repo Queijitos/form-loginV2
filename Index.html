@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Login</title>
+    
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+                    <form id="loginForm" action="/login" method="post" onsubmit="return validateForm()">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Email..." required>
+                        </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Senha..." required>
+                <div id="emailHelp" class="form-text">Nunca compartilharemos sua senha com mais ninguém.</div>
+                <br>
+            </div>
+            <a href="esqueci.html">Esqueci minha senha</a>
+            <p></p>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="remember">
+                <label class="form-check-label" for="exampleCheck1">Lembre-me depois</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary" ondblclick="seguir()"> Continuar</button>
+        </form>
+        
+    </div>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seta para Mostrar Link</title>
+   
+        <div class="link-container" style="position: relative; box-sizing: border-box; border-style: soli; padding: 11px;" >
+            <div class="arrow" onclick="toggleLink()">▶</div>
+            <a href="hhttps://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fhl%3Dpt-BR&emr=1&hl=pt-BR&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&ifkv=AaSxoQxu1oQ6ZuGXDes620_hJxgHZUUfqXUqjBQGZFz0sdbRzpVmHiEdfL6c2p7YKKD0fDpvLx1-sQ&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"  class="link" id="linkToShow"><img src="icon.png" alt=""></a>
+        </div>
+    
+        <script>
+            function toggleLink() {
+                var link = document.getElementById('linkToShow');
+                link.classList.toggle('show');
+                event.preventDefault();
+            }
+        </script>
+    </body>
+    </html>
+    
+    <script>
+        function validateForm() {
+            return true; 
+        }
+        var seguir 
+    </script>
+</body>
+</html>
